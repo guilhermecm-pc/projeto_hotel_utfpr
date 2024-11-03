@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <StackLayout Padding="20">
+        <Label Text="Cadastro de Hóspede" FontSize="24" HorizontalOptions="Center"/>
+
+        <Label Text="Nome:" />
+        <Entry x:Name="NomeEntry" />
+
+        <Label Text="CPF:" />
+        <Entry x:Name="CPFEntry" />
+
+        <Label Text="Data de Nascimento:" />
+        <Entry x:Name="DataNascimentoEntry" Placeholder="dd/MM/yyyy" />
+
+        <Label Text="Endereço:" />
+        <Entry x:Name="EnderecoEntry" />
+
+        <Label Text="Número do Quarto:" />
+        <Entry x:Name="NumeroQuartoEntry" Keyboard="Numeric" />
+
+        <Button Text="Cadastrar" Clicked="OnCadastrarClicked"/>
+    </StackLayout>
+
+</ContentPage>
